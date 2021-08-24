@@ -1,4 +1,4 @@
-# iconscout
+# icon drop store
 
 ## Project setup
 ```
