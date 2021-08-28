@@ -30,7 +30,7 @@ const actions = {
       .get("https://api.iconscout.com/v3/search", {
         params: params,
         headers: {
-          "Client-ID": "157655688545277",
+          "Client-ID": process.env.VUE_APP_CLIENT_ID,
         },
       })
       .then((res) => {
@@ -41,7 +41,7 @@ const actions = {
     axios
       .get("https://api.iconscout.com" + url, {
         headers: {
-          "Client-ID": "157655688545277",
+          "Client-ID": process.env.VUE_APP_CLIENT_ID,
         },
       })
       .then((res) => {
@@ -54,7 +54,7 @@ const actions = {
       .get("https://api.iconscout.com/v3/search", {
         params: state.params,
         headers: {
-          "Client-ID": "157655688545277",
+          "Client-ID": process.env.VUE_APP_CLIENT_ID,
         },
       })
       .then((res) => {
@@ -68,7 +68,7 @@ const actions = {
       .get("https://api.iconscout.com/v3/search", {
         params: params,
         headers: {
-          "Client-ID": "157655688545277",
+          "Client-ID": process.env.VUE_APP_CLIENT_ID,
         },
       })
       .then((res) => {
@@ -86,16 +86,16 @@ const actions = {
         },
         {
           headers: {
-            "Client-ID": "157655688545277",
-            "Client-Secret": "rOJbjZrzCFpc1hpDQh9aaeYmFPDAr2mK",
+            "Client-ID": process.env.VUE_APP_CLIENT_ID,
+            "Client-Secret": process.env.VUE_APP_CLIENT_SECRET,
           },
         }
       )
       .then((res) => {
         return axios.get(res.data.response.download.download_url, {
           headers: {
-            "Client-ID": "157655688545277",
-            "Client-Secret": "rOJbjZrzCFpc1hpDQh9aaeYmFPDAr2mK",
+            "Client-ID": process.env.VUE_APP_CLIENT_ID,
+            "Client-Secret": process.env.VUE_APP_CLIENT_SECRET,
           },
         });
       })
