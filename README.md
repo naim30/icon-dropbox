@@ -1,4 +1,4 @@
-# icon drop store
+# icon drop box
 
 ## Project setup
 ```
